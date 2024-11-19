@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.left-section {
+    background-color: #f7f7f7;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #E53935;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #E53935;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #E53935;
+    text-transform: uppercase;
+    border-bottom: 2px solid #E53935;
+    display: inline-block;
+}
+
+.career-objective p,
+.contact ul, .skills ul {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+}
+
+.skills ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    margin: 5px 0;
+}
+
+
+.right-section {
+    padding: 20px;
+    width: 60%;
+}
+
+.right-section h3 {
+    font-size: 1.2em;
+    color: #E53935;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #E53935;
+    display: inline-block;
+}
+
+.section p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
