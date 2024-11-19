@@ -1,82 +1,94 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-.resume-container {
+.container {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
     overflow: hidden;
 }
 
 
 .left-section {
-    background-color: #f7f7f7;
-    width: 40%;
+    background: #f7f7f7;
     padding: 20px;
+    width: 35%;
     text-align: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .profile-picture img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    border: 5px solid #E53935;
+    border: 4px solid #E53935;
+    margin-bottom: 15px;
 }
 
 h1 {
     font-size: 1.8em;
-    margin: 0;
     color: #E53935;
-    text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 h2 {
     font-size: 1.2em;
-    margin: 10px 0 20px;
     color: #555;
+    margin-bottom: 15px;
     font-weight: 500;
 }
 
-h3 {
+.career-objective {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact h3,
+.skills h3 {
     font-size: 1.1em;
-    margin-bottom: 10px;
     color: #E53935;
+    margin-bottom: 10px;
     text-transform: uppercase;
     border-bottom: 2px solid #E53935;
     display: inline-block;
 }
 
-.career-objective p,
-.contact ul, .skills ul {
-    font-size: 0.9em;
-    color: #555;
-    line-height: 1.6;
-}
-
-.contact ul {
+.contact ul,
+.skills ul {
     list-style: none;
     padding: 0;
-}
-
-.contact ul li {
     margin: 10px 0;
 }
 
-.skills ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
+.contact ul li {
+    margin: 8px 0;
+}
+
+.contact ul li a {
+    color: #E53935;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact ul li a:hover {
+    color: #c62828;
+}
+
+.skills h4 {
+    font-size: 1em;
+    margin-top: 15px;
+    color: #333;
 }
 
 .skills ul li {
@@ -86,37 +98,43 @@ h3 {
 
 .right-section {
     padding: 20px;
-    width: 60%;
+    width: 65%;
 }
 
 .right-section h3 {
     font-size: 1.2em;
     color: #E53935;
-    margin-bottom: 15px;
     text-transform: uppercase;
+    margin-bottom: 15px;
     border-bottom: 2px solid #E53935;
     display: inline-block;
 }
 
-.section p {
-    font-size: 0.9em;
-    color: #555;
-    line-height: 1.5;
+.education-item,
+.experience-item {
     margin-bottom: 20px;
 }
 
+.education-item p,
+.experience-item p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
 strong {
-    color: #333;
     font-weight: bold;
+    color: #333;
 }
 
 
 @media (max-width: 768px) {
-    .resume-container {
+    .container {
         flex-direction: column;
     }
 
-    .left-section, .right-section {
+    .left-section,
+    .right-section {
         width: 100%;
     }
 }
