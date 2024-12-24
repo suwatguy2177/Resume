@@ -1,13 +1,10 @@
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .resume-container {
@@ -15,10 +12,12 @@ body {
     flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
+    margin: 20px auto;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
 
 .left-section {
     background-color: #f7f7f7;
@@ -84,6 +83,7 @@ h3 {
     margin: 5px 0;
 }
 
+/* Right Section */
 .right-section {
     padding: 20px;
     width: 60%;
@@ -109,6 +109,7 @@ strong {
     color: #333;
     font-weight: bold;
 }
+
 
 @media (max-width: 768px) {
     .resume-container {
