@@ -5,6 +5,11 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* Navbar styles */
@@ -56,16 +61,19 @@ body {
     color: #E53935;
 }
 
-
+/* Main resume container */
 .resume-container {
-    margin-top: 60px; /* Add space to prevent overlap with the navbar */
+    margin-top: 80px; /* Add space to prevent overlap with the navbar */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
     max-width: 1200px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 /* Left section */
@@ -74,6 +82,10 @@ body {
     width: 40%;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-picture img {
@@ -160,14 +172,16 @@ strong {
     font-weight: bold;
 }
 
-
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .resume-container {
         flex-direction: column;
+        margin-top: 100px;
     }
 
     .left-section, .right-section {
         width: 100%;
+        text-align: center;
     }
 
     .navbar-links {
