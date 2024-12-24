@@ -6,10 +6,11 @@ body {
     background-color: #f4f4f4;
     color: #333;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
     flex-direction: column;
+    text-align: center; /* Ensure text is centered in sections */
 }
 
 /* Navbar styles */
@@ -65,8 +66,9 @@ body {
 .resume-container {
     margin-top: 80px; /* Add space to prevent overlap with the navbar */
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
     background-color: #fff;
@@ -74,6 +76,7 @@ body {
     overflow: hidden;
     padding: 30px;
     border-radius: 10px;
+    margin-bottom: 50px; /* Space at the bottom */
 }
 
 /* Left section */
@@ -81,11 +84,11 @@ body {
     background-color: #f7f7f7;
     width: 40%;
     padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .profile-picture img {
@@ -145,7 +148,7 @@ h3 {
     margin: 5px 0;
 }
 
-/* Right section */
+/* Right Section */
 .right-section {
     padding: 20px;
     width: 60%;
@@ -172,24 +175,12 @@ strong {
     font-weight: bold;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .resume-container {
         flex-direction: column;
-        margin-top: 100px;
     }
 
     .left-section, .right-section {
         width: 100%;
-        text-align: center;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar-links li {
-        margin: 10px 0;
     }
 }
