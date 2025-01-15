@@ -1,7 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fef3f3;
+  margin: 0;
+  padding: 20px;
+}
+
 .heart {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: red;
   transform: rotate(-45deg);
   margin: 50px auto;
@@ -11,18 +19,24 @@
 .heart::after {
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: red;
   border-radius: 50%;
 }
 
 .heart::before {
-  top: -50px;
+  top: -100px;
   left: 0;
 }
 
 .heart::after {
-  left: 50px;
+  left: 100px;
   top: 0;
+}
+
+.message {
+  font-size: 36px;
+  color: #333;
+  margin-top: 30px;
 }
